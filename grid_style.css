@@ -1,0 +1,33 @@
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+      padding: 12px;
+      width: 20px;
+      height: 15px;
+      -webkit-text-fill-color: black;
+  }
+ td{
+  text-align: center;
+  text-decoration: solid;
+  background-color: rgb(240, 251, 255);
+ 
+}
+ th{
+  background-color: rgb(249, 205, 255);
+  writing-mode: sideways-lr;
+ }
+ body{
+    background-color:  rgb(255, 208, 205);
+    
+}
+.container{
+  
+  background: #dedede;
+  border-radius: 10px;
+  border-top-color: aqua;
+  width: 1500px;
+  background-size: 100%;
+ 
+}

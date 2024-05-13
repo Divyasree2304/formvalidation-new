@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="C:\Users\Divya\Desktop\JavaScript\registered-trademark.svg">
+    <script src="script.js"></script>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h2><i>Candidate Registration Form</i></h2>
+        <form class="login-form">
+            <div class="form-group">
+                <label for="name">FullName:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name"  onblur="validateName(this)">
+                
+                <span id="name-error" class="error-text"></span>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" onblur="vaildateEmail(this)">
+                    <span id="email-error" class="error-text"></span>
+
+                    </div>
+                    
+                    <br>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" placeholder="Enter your dob" onblur="validateDateOfBirth(this)">
+                        <span id="dob-error" class="error-text"></span>
+
+                        </div>
+                        <br>
+                        <div class="form-group" id="gender-div">
+                            <label>Gender:</label>
+                            <div>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Other</label>
+                                <span id="gender-error" class="error-text"></span>
+
+                            </div>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="collegename">College Name:</label>
+                                <input type="text" id="collegename" name="collegename" placeholder="Enter your collegename" onblur="validateCollegename(this)">
+                                <span id="collegename-error" class="error-text"></span>
+                
+                            </div>
+                            <br>
+            <div class="form-group">
+                <label for="collegetype">College type:</label>
+        
+                    <select id="collegetype" name="collegetype" onblur="validateCollegetype(this)">
+                        <option value="">Select Option</option>
+                        <option value="Autonomous">Autonomous</option>
+                        <option value="Non-autonomous">Non-autonomous</option>
+                     
+                    </select>
+                    <span id="collegetype-error" class="error-text"></span>
+            
+            </div>
+            <br>
+            
+            <div class="form-group">
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree" placeholder="Enter your degree" onblur="validateDegree(this)">
+                <span id="degree-error" class="error-text"></span>
+
+            </div>
+<br>
+            <div class="form-group">
+                <label for="course">Course:</label>
+                    <select id="course" name="course" onblur="validateCourse(this)">
+                        <option value="">Select Option</option>
+
+                        <option value="CSE">CSE</option>
+                        <option value="AIDS">AIDS</option>
+                        <option value="EEE">EEE</option>
+
+                    </select>
+                    <span id="course-error" class="error-text"></span>
+
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="semester">Current Semester:</label>
+                <input type="number" id="semester" name="semester" placeholder="Enter your semester" onblur="validateSemester(this)">
+                <span id="semester-error" class="error-text"></span>
+
+            </div>
+           
+
+            <br>
+            <button type="button" id="submit" onclick="submitForm()">Submit Form</button>
+         
+        </form>
+    </div>
+
+</center>
+
+</body>
+</html>
